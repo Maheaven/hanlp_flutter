@@ -26,4 +26,8 @@ abstract class HanlpFlutterPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<String?> hans2hant(String text) {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
 }

@@ -11,13 +11,16 @@ class MethodChannelHanlpFlutter extends HanlpFlutterPlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
 
   @override
-  Future<String?> hans2hant() async {
-    final version = await methodChannel.invokeMethod<String>('hans2hant');
-    return version;
+  Future<String?> hans2hant(String text) async {
+    return (await methodChannel.invokeMethod<String>(
+      'hans2hant',
+      <String, dynamic>{'text': text},
+    ))!;
   }
 }
