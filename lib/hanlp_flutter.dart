@@ -11,7 +11,7 @@ class HanlpFlutter {
     return HanlpFlutterPlatform.instance.getPlatformVersion();
   }
 
-  static hans2hant(String text) {
+  static Future<String?> hans2hant(String text) {
     print('hans2hanthans2hanthans2hant------------------${text}');
     return HanlpFlutterPlatform.instance.hans2hant(text);
   }
