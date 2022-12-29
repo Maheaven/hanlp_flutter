@@ -23,4 +23,9 @@ class HanlpFlutterWeb extends HanlpFlutterPlatform {
     final version = html.window.navigator.userAgent;
     return version;
   }
+
+  @override
+  Future<String?> hans2hant(String text) async {
+    return "not impl";
+  }
 }
