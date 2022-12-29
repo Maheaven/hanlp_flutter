@@ -25,7 +25,7 @@ class HanlpFlutterWeb extends HanlpFlutterPlatform {
   }
 
   @override
-  Future<String?> hans2hant(String text) async {
+   hans2hant(String text) async {
     return "not impl";
   }
 }
