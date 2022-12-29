@@ -18,5 +18,5 @@ samples, guidance on mobile development, and a full API reference.
 dependencies:
 dio:
 git:
-url: git://github.com/flutterchina/dio.git
+url: https://github.com/Maheaven/hanlp_flutter.git
 ```
