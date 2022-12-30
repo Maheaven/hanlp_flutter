@@ -1,6 +1,8 @@
 # hanlp_flutter
 
-A new Flutter plugin.
+A Flutter plugin,Supports the transfer from simplified Chinese to traditional Chinese. 
+
+Only android is supported
 
 ## Getting Started
 
@@ -15,8 +17,9 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ```
-hanlp_flutter:
-    git:
-      url: https://github.com/Maheaven/hanlp_flutter.git
-      ref: main
+dependencies:
+    hanlp_flutter:
+        git:
+          url: https://gitee.com/MHeaven/hanlp_flutter.git
+          ref: master
 ```
