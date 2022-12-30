@@ -35,9 +35,7 @@ public class HanlpFlutterPlugin implements FlutterPlugin, MethodCallHandler {
         } else if (call.method.equals("hans2hant")) {
             try {
                 String text = call.arguments.toString();
-                Log.e("HanlpFlutterPlugin 转换前", "" + text);
                 text = HanLP.convertToTraditionalChinese(text);
-                Log.e("HanlpFlutterPlugin 转换后", "" + text);
                 result.success(text);
             } catch (Exception e) {
                 result.error("1", "java onMethodCall hans2hant Exception", null);
