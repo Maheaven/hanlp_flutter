@@ -18,9 +18,7 @@ class MethodChannelHanlpFlutter extends HanlpFlutterPlatform {
 
   @override
   Future<String?> hans2hant(String text) async {
-    print('hans2hanthans2hanthans2hant2222------------------${text}');
-    final String? res = await methodChannel
-        .invokeMethod('hans2hant', <String>{text});
+    final String? res = await methodChannel.invokeMethod('hans2hant', text);
     return res!;
   }
 }
