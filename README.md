@@ -20,6 +20,6 @@ samples, guidance on mobile development, and a full API reference.
 dependencies:
     hanlp_flutter:
         git:
-          url: https://gitee.com/MHeaven/hanlp_flutter.git
-          ref: master
+          url: https://github.com/Maheaven/hanlp_flutter.git
+          ref: main
 ```
